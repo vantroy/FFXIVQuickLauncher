@@ -452,7 +452,7 @@
     "description": "<HandleBootCheck>d__34.MoveNext"
   },
   "KillswitchText": {
-    "message": "XIVLauncher no puede iniciar el juego en este momento, ya que Square Enix ha realizado cambios en el proceso de inicio de sesión.\nNecesitamos ajustarnos a estos cambios y verificar que nuestros cambios son seguros antes de poder rehabilitar el launcher. Por favor, prueba de nuevo más tarde.\n\nPedimos disculpas por estas circunstancias.\n\nPuedes utilizar el botón de \"Launcher oficial\" de abajo para iniciar el launcher oficial.\n",
+    "message": "XIVLauncher no puede iniciar el juego en este momento, ya que Square Enix ha realizado cambios en el proceso de inicio de sesión.\nNecesitamos ajustarnos a estos cambios y verificar que nuestros cambios son seguros antes de poder rehabilitar el launcher. Por favor, inténtalo de nuevo más tarde.\n\nPedimos disculpas por estas circunstancias.\n\nPuedes utilizar el botón de \"Launcher oficial\" de abajo para iniciar el launcher oficial.\n",
     "description": "<Login>d__21.MoveNext"
   },
   "EmptyUsernameError": {

@@ -52,7 +52,7 @@
     "description": "<>c__DisplayClass2_0.<SetStep>b__0"
   },
   "DalamudNowStarting": {
-    "message": "Starting...",
+    "message": "Démarrage...",
     "description": "<>c__DisplayClass2_0.<SetStep>b__0"
   },
   "DalamudUnavailable": {
@@ -68,11 +68,11 @@
     "description": "FirstTimeSetup.NextButton_Click"
   },
   "GamePathInvalidConfirm": {
-    "message": "Le dossier que vous avez sélectionné ne contient pas d’installation de FFXIV.\nXIVLauncher va installer FFXIV quand vous vous connecterez pour la première fois.\nVoulez-vous continuer ?",
+    "message": "Le dossier que vous avez sélectionné ne contient pas d’installation de FFXIV.\nXIVLauncher installera FFXIV quand vous vous connecterez pour la première fois.\nVoulez-vous continuer ?",
     "description": "FirstTimeSetup.NextButton_Click"
   },
   "GamePathRegionConfirm": {
-    "message": "Le dossier que vous avez sélectionné pourrait être la version chinoise ou coréenne du jeu, XIVLauncher ne supporte que la version internationale du jeu.\nLe dossier que vous avez sélectionné est-il réellement pour la version internationale ?",
+    "message": "Le dossier que vous avez sélectionné semble contenir la version chinoise ou coréenne du jeu. XIVLauncher ne supporte que la version internationale du jeu.\nLe dossier que vous avez sélectionné est-il vraiment celui de la version internationale ?",
     "description": "FirstTimeSetup.NextButton_Click"
   },
   "NewsLoading": {
@@ -436,11 +436,11 @@
     "description": "<>c__DisplayClass19_0.<GetLoginFunc>b__0"
   },
   "GateUnreachable": {
-    "message": "Les serveurs de connexion n'ont pas pu être atteints. Cela indique généralement que le jeu est en cours de maintenance, ou que votre connexion aux serveurs de connexion est instable.\n\nVeuillez réessayer plus tard.",
+    "message": "Les serveurs de connexion n'ont pas pu être atteints. Cela indique généralement que le jeu est en cours de maintenance, ou que votre connexion aux serveurs est instable.\n\nVeuillez réessayer plus tard.",
     "description": "<CheckGateStatus>d__23.MoveNext"
   },
   "GateClosed": {
-    "message": "FFXIV est actuellement en maintenance. Veuillez réessayer plus tard ou voir les sources officielles pour plus d'informations.",
+    "message": "FFXIV est actuellement en maintenance. Veuillez réessayer plus tard ou consulter les sources officielles pour davantage d'informations.",
     "description": "<CheckGateStatus>d__23.MoveNext"
   },
   "CheckBootVersionError": {
@@ -452,7 +452,7 @@
     "description": "<HandleBootCheck>d__34.MoveNext"
   },
   "KillswitchText": {
-    "message": "XIVLauncher cannot start the game at this time, as Square Enix has made changes to the login process.\nWe need to adjust to these changes and verify that our adjustments are safe before we can re-enable the launcher. Please try again later.\n\nWe apologize for these circumstances.\n\nYou can use the \"Official Launcher\" button below to start the official launcher.\n",
+    "message": "XIVLauncher ne peut démarrer le jeu actuellement, car Square Enix a effectué des modifications sur le processus de connexion.\nNous devons nous ajuster à ces changements et vérifier que nos ajustements soient sécurisés avant de pouvoir réactiver le lanceur. Veuillez réessayer plus tard.\n\nNous nous excusons sincèrement pour cette situation.\n\nVous pouvez utilise le bouton \"Lanceur Officiel\" en-dessous pour lancer le Lanceur Officiel.\n",
     "description": "<Login>d__21.MoveNext"
   },
   "EmptyUsernameError": {
@@ -484,11 +484,11 @@
     "description": "<RepairGame>d__26.MoveNext"
   },
   "GameRepairSuccessMoved1": {
-    "message": "Additionally, 1 file that did not come with the original game installation has been moved to {0}.\nIf you were using GShade, you will have to reinstall it.",
+    "message": "De plus, 1 fichier étranger à l'installation du jeu a été détecté et été déplacé vers {0}.\nSi vous utilisiez GShade, vous devrez le réinstaller.",
     "description": "<RepairGame>d__26.MoveNext"
   },
   "GameRepairSuccessMovedPlural": {
-    "message": "Additionally, {0} files that did not come with the original game installation have been moved to {1}.\nIf you were using GShade, you will have to reinstall it.",
+    "message": "De plus, {0} fichiers étrangers à l'installation du jeu ont été détectés et été déplacés vers {1}.\nSi vous utilisiez GShade, vous devrez le réinstaller.",
     "description": "<RepairGame>d__26.MoveNext"
   },
   "GameRepairSuccess_LaunchGame": {
@@ -532,7 +532,7 @@
     "description": "<StartGameAndAddon>d__30.MoveNext"
   },
   "DalamudEnsurementError": {
-    "message": "Impossible de télécharger les fichiers de données nécessaires pour utiliser Dalamud et les plugins.\nCeci est probablement un problème avec votre connexion internet - le jeu va démarrer, mais vous ne pourrez pas utiliser de plugins.",
+    "message": "Impossible de télécharger les fichiers de données nécessaires pour le bon fonctionnement de Dalamud et de ses plugins.\nCeci est probablement dû à un problème avec votre connexion internet - le jeu va démarrer, mais vous ne pourrez pas utiliser de plugins.",
     "description": "<StartGameAndAddon>d__30.MoveNext"
   },
   "AddonLoadError": {
@@ -568,7 +568,7 @@
     "description": "<TryLoginToGame>d__24.MoveNext"
   },
   "LoginInvalidVersionFiles": {
-    "message": "Version information could not be read from your game files.\n\nYou need to reinstall or repair the game files. Right click the login button in XIVLauncher, and choose \"Repair Game\".",
+    "message": "Les informations de version n'ont pas pu être lu depuis les fichiers du jeu.\n\nVous devez soit réinstaller le jeu, soit réparer les fichiers du jeu. Faites un clic droit sur le bouton de \"Connexion\" de XIVLauncher, et choisissez \"Réparer les fichiers du jeu\".",
     "description": "<TryLoginToGame>d__24.MoveNext"
   },
   "LoginSteamIssue": {
@@ -608,7 +608,7 @@
     "description": "<TryLoginToGame>d__24.MoveNext"
   },
   "LoginNoServiceMessage": {
-    "message": "Ce compte Square Enix ne peut pas jouer FINAL FANTASY XIV.\n\nSi vous avez acheté FINAL FANTASY XIV sur Steam, veuillez activer l’option \"Utiliser le compte de service Steam\" lors de la connexion.\nSi la connexion automatique est activée, maintenez la touche Maj enfoncée lors du démarrage pour modifier les paramètres.",
+    "message": "Ce compte Square Enix ne peut pas jouer FINAL FANTASY XIV. Veuillez vérifier que votre abonnement est toujours actif.\n\nSi vous avez acheté FINAL FANTASY XIV sur Steam, veuillez activer l’option \"Utiliser le compte de service Steam\" lors de la connexion.\nSi la connexion automatique est activée, maintenez la touche Maj enfoncée lors du démarrage pour modifier les paramètres.",
     "description": "<TryProcessLoginResult>d__25.MoveNext"
   },
   "LoginAcceptTermsMessage": {
@@ -664,11 +664,11 @@
     "description": "<TryProcessLoginResult>d__25.MoveNext"
   },
   "GameExitedPrematurelyErrorSummary": {
-    "message": "XIVLauncher could not start the game correctly.",
+    "message": "XIVLauncher n'a pas pu démarrer le jeu correctement.",
     "description": "<TryProcessLoginResult>d__25.MoveNext"
   },
   "GameExitedPrematurelyErrorActionable": {
-    "message": "This may be a temporary issue. Please try restarting your PC.\nIt is possible that your game installation is not valid - you can repair your game installation by right clicking the Login button and choosing \"Repair game\".",
+    "message": "Il peut s'agir d'un problème temporaire. Veuillez essayer de redémarrer votre PC.\nIl est aussi possible que votre installation de jeu soit invalide - vous pouvez réparer votre installation de jeu avec un clic droit sur le bouton Connexion et en choisissant l'option \"Réparer les fichiers du jeu\".",
     "description": "<TryProcessLoginResult>d__25.MoveNext"
   },
   "BinaryNotPresentErrorSummary": {
@@ -1040,7 +1040,7 @@
     "description": "ProblemCheck.RunCheck"
   },
   "GShadeSymlinks": {
-    "message": "Les liens symboliques GShade sont corrompus.\n\nLe jeu ne peut pas démarrer. Voulez-vous que XIVLauncher corrige cela ? Vous devrez réinstaller GShade.",
+    "message": "Les liens symboliques de GShade sont corrompus.\n\nLe jeu ne peut pas démarrer. Voulez-vous que XIVLauncher corrige ce problème? Vous devrez réinstaller GShade.",
     "description": "ProblemCheck.RunCheck"
   },
   "GShadeError": {
@@ -1048,7 +1048,7 @@
     "description": "ProblemCheck.RunCheck"
   },
   "GShadeWrongMode": {
-    "message": "Vous avez installé GShade dans un mode qui n'est pas optimal pour l'utilisation avec XIVLauncher. Voulez-vous que XIVLauncher corrige cela pour vous ?\n\nCela ne changera pas vos préréglages ou vos paramètres, cela améliorera simplement la compatibilité avec les fonctionnalités de XIVLauncher.",
+    "message": "Vous avez installé GShade dans un mode qui n'est pas optimal pour un usage avec XIVLauncher. Voulez-vous que XIVLauncher corrige cela pour vous ?\n\nCela ne changera ni vos préréglages, ni vos paramètres, et améliorera simplement la compatibilité avec les fonctionnalités de XIVLauncher.",
     "description": "ProblemCheck.RunCheck"
   }
 }

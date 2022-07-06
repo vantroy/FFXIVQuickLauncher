@@ -816,7 +816,7 @@
     "description": "SettingsControlViewModel.SetupLoc"
   },
   "LauncherLanguageHelpCtaLoc": {
-    "message": "Har du märkt ett fel i översättningen? Du kan hjälpa oss med den! Bara tryck här!",
+    "message": "Har du märkt ett fel i översättningen? Du kan hjälpa oss med den! Tryck här!",
     "description": "SettingsControlViewModel.SetupLoc"
   },
   "LauncherLanguageNotice": {
@@ -844,7 +844,7 @@
     "description": "SettingsControlViewModel.SetupLoc"
   },
   "InGameAddonDescription": {
-    "message": "Dessa inställningar påverkar funktioner i spelet som tillhandahålls av Dalamud. Dessa funktioner är aktiverade automatiskt om du kör DirectX 11-versionen av spelet, spelversionen är kompatibel och rutan nedan är ikryssad.",
+    "message": "Dessa inställningar påverkar funktioner i spelet som tillhandahålls av Dalamud. Dessa funktioner är aktiverade automatiskt \nom du kör DirectX 11-versionen av spelet, spelversionen är kompatibel och rutan nedan är ikryssad.",
     "description": "SettingsControlViewModel.SetupLoc"
   },
   "InGameAddonCommandHint": {
@@ -940,7 +940,7 @@
     "description": "SettingsControlViewModel.SetupLoc"
   },
   "SettingsPatching": {
-    "message": "Uppdaterar",
+    "message": "Uppdatering",
     "description": "SettingsControlViewModel.SetupLoc"
   },
   "AskBeforePatch": {

@@ -484,11 +484,11 @@
     "description": "<RepairGame>d__26.MoveNext"
   },
   "GameRepairSuccessMoved1": {
-    "message": "Additionally, 1 file that did not come with the original game installation has been moved to {0}.\nIf you were using GShade, you will have to reinstall it.",
+    "message": "加えて、ゲームインストール時に付属していなかった1つのファイルが {0} に移動されました。GShadeを使用していた場合は、再インストールが必要です。",
     "description": "<RepairGame>d__26.MoveNext"
   },
   "GameRepairSuccessMovedPlural": {
-    "message": "Additionally, {0} files that did not come with the original game installation have been moved to {1}.\nIf you were using GShade, you will have to reinstall it.",
+    "message": "加えて、ゲームインストール時に付属していなかった {0} つのファイルが {1} に移動されました。GShadeを使用していた場合は、再インストールが必要です。",
     "description": "<RepairGame>d__26.MoveNext"
   },
   "GameRepairSuccess_LaunchGame": {
