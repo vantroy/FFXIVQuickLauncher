@@ -411,25 +411,33 @@ namespace XIVLauncher.Common.Game
                     throw new GameExitedException();
                 }
 
-                if (PInvoke.GetSecurityInfo(
-                        PInvoke.GetCurrentProcess(),
-                        PInvoke.SE_OBJECT_TYPE.SE_KERNEL_OBJECT,
-                        PInvoke.SECURITY_INFORMATION.DACL_SECURITY_INFORMATION,
-                        IntPtr.Zero, IntPtr.Zero,
-                        out var pACL,
-                        IntPtr.Zero, IntPtr.Zero) != 0)
-                {
-                    throw new Win32Exception(Marshal.GetLastWin32Error());
-                }
+                // If InnerSpace is hooked, we will skip the Get/SetSecurityInfo bit
+                // because this is handled through InnerSpace already.
+                var isInnerSpace = process.Modules
+                    .Cast<ProcessModule>()
+                    .Any(m => m.ModuleName == "InnerSpace.dll");
 
-                if (PInvoke.SetSecurityInfo(
-                        lpProcessInformation.hProcess,
-                        PInvoke.SE_OBJECT_TYPE.SE_KERNEL_OBJECT,
-                        PInvoke.SECURITY_INFORMATION.DACL_SECURITY_INFORMATION |
-                        PInvoke.SECURITY_INFORMATION.UNPROTECTED_DACL_SECURITY_INFORMATION,
-                        IntPtr.Zero, IntPtr.Zero, pACL, IntPtr.Zero) != 0)
-                {
-                    throw new Win32Exception(Marshal.GetLastWin32Error());
+                if (!isInnerSpace) {    
+                    if (PInvoke.GetSecurityInfo(
+                            PInvoke.GetCurrentProcess(),
+                            PInvoke.SE_OBJECT_TYPE.SE_KERNEL_OBJECT,
+                            PInvoke.SECURITY_INFORMATION.DACL_SECURITY_INFORMATION,
+                            IntPtr.Zero, IntPtr.Zero,
+                            out var pACL,
+                            IntPtr.Zero, IntPtr.Zero) != 0)
+                    {
+                        throw new Win32Exception(Marshal.GetLastWin32Error());
+                    }
+
+                    if (PInvoke.SetSecurityInfo(
+                            lpProcessInformation.hProcess,
+                            PInvoke.SE_OBJECT_TYPE.SE_KERNEL_OBJECT,
+                            PInvoke.SECURITY_INFORMATION.DACL_SECURITY_INFORMATION |
+                            PInvoke.SECURITY_INFORMATION.UNPROTECTED_DACL_SECURITY_INFORMATION,
+                            IntPtr.Zero, IntPtr.Zero, pACL, IntPtr.Zero) != 0)
+                    {
+                        throw new Win32Exception(Marshal.GetLastWin32Error());
+                    }
                 }
             }
             catch (Exception ex)
